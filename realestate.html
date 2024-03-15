@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+    <div class="login-popup">
+        <div class="popup-body">
+            <div class="popup-content">
+                <button class="btn login-popup--close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11 text-danger" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
+                <h3 class="login-popup--title">Login or register</h3>
+                <form action="#">
+                    <label class="login-label">Username or mobile number</label>
+                    <input class="login-input" type="text" placeholder="Enter username or mobile number here">
+                    <button class="btn login-form--btn" type="button">Next</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <header>
         <nav class="top-nav">
             <div class="container-header">
@@ -70,13 +85,14 @@
                     <div class="nav-btn--group">
                         <button class="btn btn-switch"><i class="fa-solid fa-moon"></i></button>
                         <button class="btn btn-lg">عربي <span><i class="fa-solid fa-chevron-up"></i> <i class="fa-solid fa-chevron-down"></i></span></button>
-                        <button class="btn btn-login">Login <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-in-alt" class="svg-inline--fa fa-sign-in-alt fa-w-16 fa-flip-horizontal " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"></path></svg></span></button>
+                        <button class="btn btn-login login-popup--open">Login <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-in-alt" class="svg-inline--fa fa-sign-in-alt fa-w-16 fa-flip-horizontal " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"></path></svg></span></button>
                     </div>
                     <a class="brand" href="/"><img class="brand-img" src="img/haraj-logo.png" alt="Brand name"></a>
                 </div>
             </div>
         </nav>
     </header>
+
     <main class="main">
         <div class="main-content">
             <div class="main-top">
@@ -164,7 +180,7 @@
                 <div class="realestate-overly">
                     <div class="realestate-overlay--content">
                         <p class="realestate-overlay--text">You must login to view ads</p>
-                        <button class="btn login-btn">Login</button>
+                        <button class="btn login-btn login-popup--open">Login</button>
                     </div>
                 </div>
                 <!-- Product 1 -->

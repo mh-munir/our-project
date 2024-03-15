@@ -12,3 +12,12 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+$(document).ready(function() {
+  $(".login-popup--open").click(function () {
+      $(".login-popup").addClass("login-popup--show");      
+  });
+  $(".login-popup--close").click(function () {
+      $(".login-popup").removeClass("login-popup--show");      
+  });
+  });
