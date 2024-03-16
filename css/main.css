@@ -513,10 +513,11 @@ Product Items
     padding-top: 15px;
 }
 
-.product-item{
+.product-item {
     display: grid;
-    grid-template-columns:  minmax(40%, .5fr) 1fr;
+    grid-template-columns: minmax(35%, .4fr) 1fr;
     border-bottom: 1px dotted #cac4c4;
+    min-height: 98px;
 }
 
 .product-img{
@@ -969,6 +970,107 @@ Aside
 }
 .login-btn:hover{
     background-color: var(--primary-darker);
+}
+
+
+/* ======================= 
+post page 
+========================== */
+.post-main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f2f4fa;
+    padding: 40px 0;
+}
+
+.post-section{
+    max-width: 1280px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 40px;
+    padding: 30px;
+    direction: rtl;
+}
+
+.post-back--btn{
+    font-size: 32px;
+    color: var(--text-title);
+}
+.post-page--title{
+    font-size: 28px;
+    color: var(--text-title);
+    margin-bottom: 15px;
+}
+
+.post-page--subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-title);
+    margin-bottom: 30px;
+}
+.post-catagory--items{
+    list-style: none;
+}
+.post-catagory--item{
+    padding: 20px 0;
+    border-bottom: 1px dotted var(--border);
+}
+.post-catagory--link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catagory-links--item{
+    display: flex;
+    gap: 20px;
+}
+.catagory-link--title{
+    font-family: inherit;
+    font-size: 18px;
+    color: var(--primary);
+}
+.catagory-link--icon svg{
+    width: 32px;
+    height: 28px;
+    color: var(--primary);
+}
+.catagory-link--arrow{
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.post-agreement-section{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 30px;
+    direction: rtl;
+    border-radius: 40px;
+}
+
+.post-agreement--top{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 15px;
+}
+.post-agreement--title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-title);
+}
+.post-agreement--middle{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+.post-agreement--text{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--text-title);
+}
+.post-agreement--text span{
+    font-weight: 600;
 }
 /* =============================
 Footer
