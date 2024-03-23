@@ -11,6 +11,7 @@
     --elementary: #3a5c83;
     --text-tertiary: #f7fbfa;
     --secondary-input-gray: #d4dade;
+    --text-label: #616161;
 }
 
 *,::before,::after{
@@ -1041,13 +1042,16 @@ post page
     color: var(--primary);
 }
 
-.post-agreement-section{
+.agreement-section{
     max-width: 1280px;
     margin: 0 auto;
     background-color: var(--white);
     padding: 30px;
     direction: rtl;
     border-radius: 40px;
+}
+.post-agreement-section{
+    margin-block-end: 50px;
 }
 
 .post-agreement--top{
@@ -1071,6 +1075,86 @@ post page
 }
 .post-agreement--text span{
     font-weight: 600;
+}
+.agreement-checkbox{
+    display: flex;
+    align-items: flex-start;
+    padding-block: 30px;
+    gap: 5px;
+}
+.checkbox-field{
+    appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--secondary-input-gray);
+    border-radius: 6px;
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.checkbox-label{
+    display: inline-block;
+    max-width: 790px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-label);
+}
+.checkbox-field:hover::before{
+    border: 1px solid var(--primary);
+}
+
+
+.checkbox-field::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    border: 1px solid var(--secondary-input-gray);
+    border-radius: 6px;
+}
+.checkbox-field:checked::before {
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--primary);
+}
+.checkbox-field::after {
+    position: absolute;
+    width: 94%;
+    height: 94%;
+    top: 63%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+.checkbox-field:checked::after {
+    content: "✔";
+    background-color: var(--primary);
+}
+
+.checkbox-label p{
+    margin-block-start: 30px;
+}
+.agreement--text{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-label);
+    margin-block-end: 30px;
+}
+.continue-btn{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    padding-block: 7px;
+    padding-inline: 15px;
+    background-color: var(--primary);
+    border-radius: 10px;
 }
 /* =============================
 Footer
