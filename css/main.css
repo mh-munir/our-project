@@ -173,6 +173,9 @@ login-popup
     color: red;
 }
 /* ========= Header ========== */
+.d-hide{
+    display: none;
+}
 .top-nav{
     padding-block: 9px;
 }
@@ -1052,6 +1055,7 @@ post page
 }
 .post-agreement-section{
     margin-block-end: 50px;
+    display: none;
 }
 
 .post-agreement--top{
@@ -1155,6 +1159,100 @@ post page
     padding-inline: 15px;
     background-color: var(--primary);
     border-radius: 10px;
+}
+
+
+.area-lists{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.area-list{
+    padding-block: 30px;
+    border-bottom: 1px dotted var(--border);
+}
+
+.area-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--primary);
+    padding-inline-start: 30px;
+}
+
+.back-btn{
+    display: inline-block;
+    padding: 0px 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-block-end: 20px;
+}
+.back-btn:hover{
+    box-shadow: none;
+}
+.back-btn span{
+    font-size: 36px;
+    line-height: 0;
+}
+
+.upload-back--btn{
+    font-size: 36px;
+    color: var(--text-title);
+}
+
+.upload-image--title{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-title);
+    margin-bottom: 30px;
+}
+.upload-fields{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.upload-field{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload-input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+.upload-content{
+    text-align: center;
+}
+.upload-content p{
+    font-size: 18px;
+    color: var(--primary);
+}
+.upload-icon{
+    display: block;
+    font-size: 50px;
+    color: var(--primary);
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+.upload-icon svg{
+    width: 50px;
 }
 /* =============================
 Footer
