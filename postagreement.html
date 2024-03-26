@@ -10,6 +10,7 @@
 </head>
 <body>
     <main class="post-main">
+        <!-- Agreement Section -->
         <section class="post-agreement-section agreement-section">
           <div class="post-agreement--top">
             <a class="post-back--btn" href="post.html"><i class="fa-solid fa-arrow-right"></i></a>
@@ -31,6 +32,7 @@
           <a class="btn continue-btn" href="/">إستمرار »</a>
         </section>
 
+        <!-- state Section -->
         <section class="agreement-section state-area d-hide">
             <div> <h1 class="post-agreement--title">Choose Province</h1></div>
             <ul class="area-lists">
@@ -79,6 +81,7 @@
             </ul>
         </section>
 
+        <!-- city Section -->
         <section class="agreement-section city-area d-hide">
           <div> 
             <a class="back-btn" href="/"><span class="catagory-link--arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
@@ -145,7 +148,8 @@
           </ul>
         </section>
 
-      <section class="agreement-section image-upload">
+        <!-- Image Upload Section -->
+      <section class="agreement-section image-upload d-hide">
         <div> 
           <a class="upload-back--btn" href="/"><span class="upload-image--arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
           <h1 class="upload-image--title">Upload images</h1>
@@ -191,6 +195,57 @@
         </div>
         <a class="btn continue-btn" href="/">إستمرار »</a>
       </section>
+
+       <!-- Post Form Section -->
+      <section class="agreement-section post-product">
+        <a class="upload-back--btn" href="/"><span class="upload-image--arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+        <div class="post-form">
+            <form action="#">
+                <div class="form-top">
+                    <h2 class="post-form-title">الرياض, الرياض</h2>
+                    <button class="location-field">
+                      Change location
+                  </button>
+                </div>
+                <div class="input-group">
+                    <label for="post-title">Post title:</label>
+                    <input id="post-title" class="input-post input-post--title" type="text" placeholder="Ex: Honda Accord 2017 full">
+                </div>
+                <div class="select-group">
+                   <button id="catfield" class="select-items--field">  Cars <span>🢓</span></button>
+                   <button id="allfield" class="select-items--field">  All <span>🢓</span></button>
+                </div>
+                <p class="form-request--text">Please choose a section</p>
+                <div class="choose-inputs">
+                    <div class="choose-inputs--top">
+                        <h3 class="hideandshow-title">Show mobile number</h3>
+                        <button id="phoneactivedeactive" class="input-btn active"></button>
+                    </div>
+                    <div class="phone-input--group">
+                      <input id="post-title" class="input-post input-phone" type="text" placeholder="050000000">
+                  </div>
+                </div>
+                <div class="choose-inputs">
+                    <div class="choose-inputs--top">
+                        <h3 class="hideandshow-title">Set price?</h3>
+                        <button id="priceactivedeactive" class="input-btn"></button>
+                    </div>
+                    <div class="price-input--group hide-input">
+                      <input id="post-title" class="input-post input-price" type="number" placeholder="10000">
+                    </div>
+                </div>
+                <div>
+                    <textarea class="post-textarea" name="postdes" id="postdes" placeholder="التفاصيل :"></textarea>
+                </div>
+                <button class="btn submit-post--btn">Submit post</button>
+            </form>
+        </div>
+      </section>
+
     </main>
+
+     <!-- JS Link -->
+     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+     <script src="js/main.js"></script>
 </body>
 </html>

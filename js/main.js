@@ -21,3 +21,16 @@ $(document).ready(function() {
       $(".login-popup").removeClass("login-popup--show");      
   });
   });
+
+  $(document).ready(function(){
+    $("#phoneactivedeactive").click(function(){
+      $(".phone-input--group").toggleClass('hide-input');
+      $("#phoneactivedeactive").toggleClass('active');
+    });
+  });
+  $(document).ready(function(){
+    $("#priceactivedeactive").click(function(){
+      $(".price-input--group").toggleClass('hide-input');
+      $("#priceactivedeactive").toggleClass('active');
+    });
+  });
