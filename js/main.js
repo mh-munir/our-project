@@ -34,3 +34,26 @@ $(document).ready(function() {
       $("#priceactivedeactive").toggleClass('active');
     });
   });
+
+
+  // Post Active and Inactive Window
+
+  $(document).ready(function(){
+    $('.continue-btn').click(function(){
+      $('.agreement-section').addClass('d-hide')
+      $('.state-area').removeClass('d-hide')
+    })
+    $('.btn-province').click(function(){
+      $('.state-area').addClass('d-hide')
+      $('.city-area').removeClass('d-hide')
+    })
+    $('.city-area--btn').click(function(){
+      $('.city-area').addClass('d-hide')
+      $('.image-upload').removeClass('d-hide')
+    })
+    $('.upload-btn').click(function(){
+      $('.image-upload').addClass('d-hide')
+      $('.state-area').addClass('d-hide')
+      $('.post-product').removeClass('d-hide')
+    })
+  })
