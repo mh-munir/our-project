@@ -1,684 +1,1153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>موقع حراج</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <div class="login-popup">
-        <div class="popup-body">
-            <div class="popup-content">
-                <button class="btn login-popup--close"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11 text-danger" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></button>
-                <h3 class="login-popup--title">Login or register</h3>
-                <form action="#">
-                    <label class="login-label">Username or mobile number</label>
-                    <input class="login-input" type="text" placeholder="Enter username or mobile number here">
-                    <button class="btn login-form--btn" type="button">Next</button>
-                </form>
-            </div>
+      <div class="popup-body">
+        <div class="popup-content">
+          <button class="btn login-popup--close">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="times"
+              class="svg-inline--fa fa-times fa-w-11 text-danger"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 352 512"
+            >
+              <path
+                fill="currentColor"
+                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+              ></path>
+            </svg>
+          </button>
+          <h3 class="login-popup--title">Login or register</h3>
+          <form action="#">
+            <label class="login-label">Username or mobile number</label>
+            <input
+              class="login-input"
+              type="text"
+              placeholder="Enter username or mobile number here"
+            />
+            <button class="btn login-form--btn" type="button">Next</button>
+          </form>
         </div>
+      </div>
     </div>
 
     <header class="header">
-        <nav class="top-nav">
-            <div class="container-header">
-                <ul class="nav-items">
-                       
-                    <li class="nav-item">
-                        <a class="nav-link" class="nav-link" href="/">Main</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="car.html">Cars
-                            <span class="nav-link--icon">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="car" class="svg-inline--fa fa-car fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M120.81 248c-25.96 0-44.8 16.8-44.8 39.95 0 23.15 18.84 39.95 44.8 39.95l10.14.1c39.21 0 45.06-20.1 45.06-32.08-.01-24.68-31.1-47.92-55.2-47.92zm10.14 56c-3.51 0-7.02-.1-10.14-.1-12.48 0-20.8-6.38-20.8-15.95s8.32-15.95 20.8-15.95 31.2 14.36 31.2 23.93c0 7.17-10.54 8.07-21.06 8.07zm260.24-56c-24.1 0-55.19 23.24-55.19 47.93 0 11.98 5.85 32.08 45.06 32.08l10.14-.1c25.96 0 44.8-16.8 44.8-39.95-.01-23.16-18.85-39.96-44.81-39.96zm0 55.9c-3.12 0-6.63.1-10.14.1-10.53 0-21.06-.9-21.06-8.07 0-9.57 18.72-23.93 31.2-23.93s20.8 6.38 20.8 15.95-8.32 15.95-20.8 15.95zm114.8-140.94c-7.34-11.88-20.06-18.97-34.03-18.97H422.3l-8.07-24.76C403.5 86.29 372.8 64 338.17 64H173.83c-34.64 0-65.33 22.29-76.06 55.22l-8.07 24.76H40.04c-13.97 0-26.69 7.09-34.03 18.97s-8 26.42-1.75 38.91l5.78 11.61c3.96 7.88 9.92 14.09 17 18.55-6.91 11.74-11.03 25.32-11.03 39.97V400c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48v-16H384v16c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48V271.99c0-14.66-4.12-28.23-11.03-39.98 7.09-4.46 13.04-10.68 17-18.57l5.78-11.56c6.24-12.5 5.58-27.05-1.76-38.92zM128.2 129.14C134.66 109.32 153 96 173.84 96h164.33c20.84 0 39.18 13.32 45.64 33.13l20.47 62.85H107.73l20.47-62.84zm-89.53 70.02l-5.78-11.59c-1.81-3.59-.34-6.64.34-7.78.87-1.42 2.94-3.8 6.81-3.8h39.24l-6.45 19.82a80.69 80.69 0 0 0-23.01 11.29c-4.71-1-8.94-3.52-11.15-7.94zM96.01 400c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm367.98 0c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm0-80.01v32H48.01v-80c0-26.47 21.53-48 48-48h319.98c26.47 0 48 21.53 48 48v48zm15.12-132.41l-5.78 11.55c-2.21 4.44-6.44 6.97-11.15 7.97-6.94-4.9-14.69-8.76-23.01-11.29l-6.45-19.82h39.24c3.87 0 5.94 2.38 6.81 3.8.69 1.14 2.16 4.18.34 7.79z"></path></svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Devices
-                            <span class="nav-link--icon">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="mobile" class="svg-inline--fa fa-mobile fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M192 416c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32zM320 48v416c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h224c26.5 0 48 21.5 48 48zm-32 0c0-8.8-7.2-16-16-16H48c-8.8 0-16 7.2-16 16v416c0 8.8 7.2 16 16 16h224c8.8 0 16-7.2 16-16V48z"></path></svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="realestate.html">Real Estates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Livestock and Animals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Furniture
-                            <span class="nav-link--icon">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="loveseat" class="svg-inline--fa fa-loveseat fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 193.9v-33.7c0-53.1-43-96.2-96-96.2H160c-53 0-96 43.1-96 96.2v33.7c-36.5 7.5-64 39.8-64 78.6 0 25.1 12.1 48.8 32 63.8v79.6c0 17.7 14.3 32.1 32 32.1h64c17.3 0 31.3-14.7 31.8-32h192.4c.5 17.3 14.5 32 31.8 32h64c17.7 0 32-14.4 32-32.1v-79.6c19.9-15.1 32-38.7 32-63.8 0-38.7-27.5-71.1-64-78.6zm-320 222H64v-97.4c-17.1-10-32-21.1-32-46 0-26.5 21.5-48.1 48-48.1h32c8.8 0 16 7.2 16 16v175.5zM352 384H160v-95.5h192V384zm0-143.6V256H160v-15.6c0-26.5-21.5-48.1-48-48.1H96v-32.1c0-35.4 28.7-64.1 64-64.1h192c35.3 0 64 28.8 64 64.1v32.1h-16c-26.5 0-48 21.6-48 48.1zm96 78.1v97.4h-64V240.4c0-8.8 7.2-16 16-16h32c26.5 0 48 21.6 48 48.1 0 23.9-13.9 35.4-32 46z"></path></svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Search
-                            <span class="nav-link--icon">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"></path></svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">More Sections 
-                            <span class="nav-link--icon">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="sitemap" class="svg-inline--fa fa-sitemap fa-w-20 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M608 352h-32v-97.59c0-16.77-13.62-30.41-30.41-30.41H336v-64h48c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H256c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h48v64H94.41C77.62 224 64 237.64 64 254.41V352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32H96v-96h208v96h-32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32h-32v-96h208v96h-32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32zm-480 32v96H32v-96h96zm240 0v96h-96v-96h96zM256 128V32h128v96H256zm352 352h-96v-96h96v96z"></path></svg>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
+      <nav class="top-nav">
+        <div class="container-header">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a class="nav-link" class="nav-link" href="/">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car.html"
+                >Cars
+                <span class="nav-link--icon">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="car"
+                    class="svg-inline--fa fa-car fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M120.81 248c-25.96 0-44.8 16.8-44.8 39.95 0 23.15 18.84 39.95 44.8 39.95l10.14.1c39.21 0 45.06-20.1 45.06-32.08-.01-24.68-31.1-47.92-55.2-47.92zm10.14 56c-3.51 0-7.02-.1-10.14-.1-12.48 0-20.8-6.38-20.8-15.95s8.32-15.95 20.8-15.95 31.2 14.36 31.2 23.93c0 7.17-10.54 8.07-21.06 8.07zm260.24-56c-24.1 0-55.19 23.24-55.19 47.93 0 11.98 5.85 32.08 45.06 32.08l10.14-.1c25.96 0 44.8-16.8 44.8-39.95-.01-23.16-18.85-39.96-44.81-39.96zm0 55.9c-3.12 0-6.63.1-10.14.1-10.53 0-21.06-.9-21.06-8.07 0-9.57 18.72-23.93 31.2-23.93s20.8 6.38 20.8 15.95-8.32 15.95-20.8 15.95zm114.8-140.94c-7.34-11.88-20.06-18.97-34.03-18.97H422.3l-8.07-24.76C403.5 86.29 372.8 64 338.17 64H173.83c-34.64 0-65.33 22.29-76.06 55.22l-8.07 24.76H40.04c-13.97 0-26.69 7.09-34.03 18.97s-8 26.42-1.75 38.91l5.78 11.61c3.96 7.88 9.92 14.09 17 18.55-6.91 11.74-11.03 25.32-11.03 39.97V400c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48v-16H384v16c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48V271.99c0-14.66-4.12-28.23-11.03-39.98 7.09-4.46 13.04-10.68 17-18.57l5.78-11.56c6.24-12.5 5.58-27.05-1.76-38.92zM128.2 129.14C134.66 109.32 153 96 173.84 96h164.33c20.84 0 39.18 13.32 45.64 33.13l20.47 62.85H107.73l20.47-62.84zm-89.53 70.02l-5.78-11.59c-1.81-3.59-.34-6.64.34-7.78.87-1.42 2.94-3.8 6.81-3.8h39.24l-6.45 19.82a80.69 80.69 0 0 0-23.01 11.29c-4.71-1-8.94-3.52-11.15-7.94zM96.01 400c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm367.98 0c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm0-80.01v32H48.01v-80c0-26.47 21.53-48 48-48h319.98c26.47 0 48 21.53 48 48v48zm15.12-132.41l-5.78 11.55c-2.21 4.44-6.44 6.97-11.15 7.97-6.94-4.9-14.69-8.76-23.01-11.29l-6.45-19.82h39.24c3.87 0 5.94 2.38 6.81 3.8.69 1.14 2.16 4.18.34 7.79z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"
+                >Devices
+                <span class="nav-link--icon">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="mobile"
+                    class="svg-inline--fa fa-mobile fa-w-10"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M192 416c0 17.7-14.3 32-32 32s-32-14.3-32-32 14.3-32 32-32 32 14.3 32 32zM320 48v416c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h224c26.5 0 48 21.5 48 48zm-32 0c0-8.8-7.2-16-16-16H48c-8.8 0-16 7.2-16 16v416c0 8.8 7.2 16 16 16h224c8.8 0 16-7.2 16-16V48z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="realestate.html">Real Estates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Livestock and Animals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"
+                >Furniture
+                <span class="nav-link--icon">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="loveseat"
+                    class="svg-inline--fa fa-loveseat fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M448 193.9v-33.7c0-53.1-43-96.2-96-96.2H160c-53 0-96 43.1-96 96.2v33.7c-36.5 7.5-64 39.8-64 78.6 0 25.1 12.1 48.8 32 63.8v79.6c0 17.7 14.3 32.1 32 32.1h64c17.3 0 31.3-14.7 31.8-32h192.4c.5 17.3 14.5 32 31.8 32h64c17.7 0 32-14.4 32-32.1v-79.6c19.9-15.1 32-38.7 32-63.8 0-38.7-27.5-71.1-64-78.6zm-320 222H64v-97.4c-17.1-10-32-21.1-32-46 0-26.5 21.5-48.1 48-48.1h32c8.8 0 16 7.2 16 16v175.5zM352 384H160v-95.5h192V384zm0-143.6V256H160v-15.6c0-26.5-21.5-48.1-48-48.1H96v-32.1c0-35.4 28.7-64.1 64-64.1h192c35.3 0 64 28.8 64 64.1v32.1h-16c-26.5 0-48 21.6-48 48.1zm96 78.1v97.4h-64V240.4c0-8.8 7.2-16 16-16h32c26.5 0 48 21.6 48 48.1 0 23.9-13.9 35.4-32 46z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"
+                >Search
+                <span class="nav-link--icon">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="search"
+                    class="svg-inline--fa fa-search fa-w-16"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/"
+                >More Sections
+                <span class="nav-link--icon">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fal"
+                    data-icon="sitemap"
+                    class="svg-inline--fa fa-sitemap fa-w-20"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M608 352h-32v-97.59c0-16.77-13.62-30.41-30.41-30.41H336v-64h48c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H256c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h48v64H94.41C77.62 224 64 237.64 64 254.41V352H32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32H96v-96h208v96h-32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32h-32v-96h208v96h-32c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32zm-480 32v96H32v-96h96zm240 0v96h-96v-96h96zM256 128V32h128v96H256zm352 352h-96v-96h96v96z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="second-nav">
+        <div class="container-header">
+          <div class="second-nav--content">
+            <div class="nav-btn--group">
+              <button class="btn btn-switch">
+                <i class="fa-solid fa-moon"></i>
+              </button>
+              <button class="btn btn-lg">
+                عربي
+                <span
+                  ><i class="fa-solid fa-chevron-up"></i>
+                  <i class="fa-solid fa-chevron-down"></i
+                ></span>
+              </button>
+              <button class="btn btn-login login-popup--open">
+                Login
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="sign-in-alt"
+                    class="svg-inline--fa fa-sign-in-alt fa-w-16 fa-flip-horizontal"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"
+                    ></path></svg
+                ></span>
+              </button>
             </div>
-        </nav>
-        <nav class="second-nav">
-            <div class="container-header">
-                <div class="second-nav--content">
-                    <div class="nav-btn--group">
-                        <button class="btn btn-switch"><i class="fa-solid fa-moon"></i></button>
-                        <button class="btn btn-lg">عربي <span><i class="fa-solid fa-chevron-up"></i> <i class="fa-solid fa-chevron-down"></i></span></button>
-                        <button class="btn btn-login login-popup--open">Login <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-in-alt" class="svg-inline--fa fa-sign-in-alt fa-w-16 fa-flip-horizontal " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"></path></svg></span></button>
-                    </div>
-                    <a class="brand" href="/"><img class="brand-img" src="img/haraj-logo.png" alt="Brand name"></a>
-                </div>
-            </div>
-        </nav>
+            <a class="brand" href="/"
+              ><img class="brand-img" src="img/haraj-logo.png" alt="Brand name"
+            /></a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="main">
-        <div class="main-content">
-            <div class="test-search--box">
-                <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search...">
-                    <button class="search-button">Search</button>
-                </div>
-                <div class="button-container">
-                    <button class="post-button">Post</button>
-                </div>
-            </div>
-            <div class="main-top">
-                <a href="post.html" class="btn top-add--post"><span><i class="fa-solid fa-plus"></i></span> Add your post</a>
-                <form class="top-form" action="#">
-                    <button class="btn top-btn--serach"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="search" placeholder=".. Search for goods">
-                </form>
-            </div>
-
-            <div class="category">
-                <div class="category-items">
-                    <ul class="category-lists">
-                        <li class="cat-item"><a class="cat-link" href="car.html"> <img class="cat-img" src="img/category-img/car.svg" alt="Car"> <span class="cat-title">Car</span> </a></li>
-                        <li class="cat-item"><a class="cat-link" href="realestate.html"> <img class="cat-img" src="img/category-img/house.svg" alt="Real Estate"> <span class="cat-title">Real Estate</span> </a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/devices.svg" alt="Devices"> <span class="cat-title">Devices</span> </a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/sheep.svg" alt="Animals"> <span class="cat-title">Animals, livestock and birds</span> </a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/seat.svg" alt="Furniture"> <span class="cat-title">Furniture</span> </a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/shirt.svg" alt="Personal Accessories"> <span class="cat-title">Personal Accessories</span> </a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/service.svg" alt="Services"> <span class="cat-title">Services</span> </a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/job.svg" alt="Job"> <span class="cat-title">Jobs</span></a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/food.svg" alt="Food and beverages"> <span class="cat-title">Food and beverages</span></a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/programming.svg" alt="Programming and designs"> <span class="cat-title">Programming and designs</span></a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/arts.svg" alt="Library and Arts"> <span class="cat-title">Library and Arts</span></a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/trips.svg" alt="Hunting and Trips"> <span class="cat-title">Hunting and Trips</span></a></li>
-                        <li class="cat-item"><a class="cat-link" href="/"> <img class="cat-img" src="img/category-img/more-icon.svg" alt="All Auctions"> <span class="cat-title">All Auctions</span></a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="filter-btn--group">
-                <button class="btn btn-filter--group"> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-arrow" class="svg-inline--fa fa-location-arrow fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg></span> Near </button>
-                <button class="btn btn-filter--group"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marked-alt" class="svg-inline--fa fa-map-marked-alt fa-w-18 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zm0 168c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z"></path></svg></button>
-                <button class="btn btn-filtergroup--hide btn-filter--group"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sliders-v" class="svg-inline--fa fa-sliders-v fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M112 96H96V16c0-8.8-7.2-16-16-16H48c-8.8 0-16 7.2-16 16v80H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v336c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V160h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm320 128h-16V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v208h-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v208c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V288h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM272 352h-16V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v336h-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v80c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-80h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z"></path></svg></button>
-                <select class="select-field">
-                    <option value="all" selected> All region </option>
-                    <option value="Riyadh"> Riyadh </option>
-                    <option value="eastern-region"> Eastern Region </option>
-                    <option value="jeddah"> Jeddah </option>
-                    <option value="yanbu"> Yanbu </option>
-                    <option value="hafar-al-batin"> Hafar Al Batin </option>
-                </select>
-            </div>
-
-            <div class="product-items">
-                <!-- Product 1 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Product 2 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp1.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 3 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp2.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 4 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp4.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 5 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp6.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Product 6 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp7.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 7 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp8.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 8 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp9.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 9 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp10.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 10 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp6.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Product 11 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 12 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp1.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 13 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp2.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 14 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp4.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 15 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp6.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 16 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp7.webp" alt="Product Image">
-                    </a>
-                        <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 17 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp8.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 18 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp9.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 19 -->
-                <div class="product-item bg-tertiary">
-                    <a href="/" class="product-img">
-                        <img src="img/webp10.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Product 20 -->
-                <div class="product-item bg-white">
-                    <a href="/" class="product-img">
-                        <img src="img/webp6.webp" alt="Product Image">
-                    </a>
-                    <div class="product-details">
-                        <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
-                        <div class="product-content">
-                            <div class="product-details--item"> <p class="product-text">5 minutes ago</p> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
-                            <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
-                        </div>
-                        <div class="product-content">
-                            <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
-                            <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="product-button">
-                <button class="btn show-btn">... Show More</button>
-            </div>
-
+      <div class="main-content">
+        <div class="test-search--box">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search..." />
+            <button class="search-button">Search</button>
+          </div>
+          <div class="button-container">
+            <button class="post-button">Post</button>
+          </div>
         </div>
-        <aside class="aside">
-            <div class="cat-dropdown">
-                <div class="cat-dropdown--field">
-                    <span class="cat-dropdown--arrow">🞃</span><p class="cat-dropdown--text">All</p>
+        <div class="main-top">
+          <a href="post.html" class="btn top-add--post"
+            ><span><i class="fa-solid fa-plus"></i></span> Add your post</a
+          >
+          <form class="top-form" action="#">
+            <button class="btn top-btn--serach">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="search" placeholder=".. Search for goods" />
+          </form>
+        </div>
+
+        <div class="category">
+          <div class="category-items">
+            <ul class="category-lists">
+              <li class="cat-item">
+                <a class="cat-link" href="car.html">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/car.svg"
+                    alt="Car"
+                  />
+                  <span class="cat-title">Car</span>
+                </a>
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="realestate.html">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/house.svg"
+                    alt="Real Estate"
+                  />
+                  <span class="cat-title">Real Estate</span>
+                </a>
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/devices.svg"
+                    alt="Devices"
+                  />
+                  <span class="cat-title">Devices</span>
+                </a>
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/sheep.svg"
+                    alt="Animals"
+                  />
+                  <span class="cat-title">Animals, livestock and birds</span>
+                </a>
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/seat.svg"
+                    alt="Furniture"
+                  />
+                  <span class="cat-title">Furniture</span>
+                </a>
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/shirt.svg"
+                    alt="Personal Accessories"
+                  />
+                  <span class="cat-title">Personal Accessories</span>
+                </a>
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/service.svg"
+                    alt="Services"
+                  />
+                  <span class="cat-title">Services</span>
+                </a>
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/job.svg"
+                    alt="Job"
+                  />
+                  <span class="cat-title">Jobs</span></a
+                >
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/food.svg"
+                    alt="Food and beverages"
+                  />
+                  <span class="cat-title">Food and beverages</span></a
+                >
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/programming.svg"
+                    alt="Programming and designs"
+                  />
+                  <span class="cat-title">Programming and designs</span></a
+                >
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/arts.svg"
+                    alt="Library and Arts"
+                  />
+                  <span class="cat-title">Library and Arts</span></a
+                >
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/trips.svg"
+                    alt="Hunting and Trips"
+                  />
+                  <span class="cat-title">Hunting and Trips</span></a
+                >
+              </li>
+              <li class="cat-item">
+                <a class="cat-link" href="/">
+                  <img
+                    class="cat-img"
+                    src="img/category-img/more-icon.svg"
+                    alt="All Auctions"
+                  />
+                  <span class="cat-title">All Auctions</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="filter-btn--group">
+          <button class="btn btn-filter--group">
+            <span
+              ><svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="location-arrow"
+                class="svg-inline--fa fa-location-arrow fa-w-16"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"
+                ></path></svg
+            ></span>
+            Near
+          </button>
+          <button class="btn btn-filter--group">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="map-marked-alt"
+              class="svg-inline--fa fa-map-marked-alt fa-w-18 fa-fw"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                fill="currentColor"
+                d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zm0 168c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z"
+              ></path>
+            </svg>
+          </button>
+          <button class="btn btn-filtergroup--hide btn-filter--group">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="sliders-v"
+              class="svg-inline--fa fa-sliders-v fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M112 96H96V16c0-8.8-7.2-16-16-16H48c-8.8 0-16 7.2-16 16v80H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v336c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V160h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm320 128h-16V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v208h-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v208c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V288h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM272 352h-16V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v336h-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h16v80c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-80h16c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z"
+              ></path>
+            </svg>
+          </button>
+          <select class="select-field">
+            <option value="all" selected>All region</option>
+            <option value="Riyadh">Riyadh</option>
+            <option value="eastern-region">Eastern Region</option>
+            <option value="jeddah">Jeddah</option>
+            <option value="yanbu">Yanbu</option>
+            <option value="hafar-al-batin">Hafar Al Batin</option>
+          </select>
+        </div>
+
+        <div class="product-items"></div>
+        <div class="product-button">
+          <!-- <div class="product-item bg-tertiary">
+                <a href="/" class="product-img">
+                    <img src="img/webp.webp" alt="Product Image">
+                </a>
+                <div class="product-details">
+                    <a class="product-title" href="/">نسيان ماكسيما 2017 ممشى قليل</a>
+                    <div class="product-content">
+                        <div class="product-details--item"> <a class="product-text" href="/">5 minutes ago</a> <span class="details-icon"><i class="fa-solid fa-arrows-rotate"></i> </span> </div>
+                        <div class="product-details--item"> <p class="product-text">2</p> <span class="details-icon"><i class="fa-regular fa-comments"></i></span></div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-details--item"> <a class="product-text" href="/">1eed2011</a> <span class="details-icon"><i class="fa-regular fa-user"></i></span></div>
+                        <div class="product-details--item"> <a class="product-text" href="/">Riyadh</a> <span class="details-icon"><i class="fa-solid fa-location-dot"></i></span></div>
+                    </div>
                 </div>
-                <ul class="cat-dropdown--lists">
-                    <li>all</li>
-                    <li>Car</li>
-                    <li>Real Estate</li>
-                    <li>Devices</li>
-                    <li>Animals, livestock and birds</li>
-                    <li>Furniture</li>
-                    <li>Personal Accessories</li>
-                    <li>Services</li>
-                    <li>Jobs</li>
-                    <li>Food and beverages</li>
-                    <li>Programming and designs</li>
-                    <li>Library and Arts</li>
-                    <li>Hunting and Trips</li>
-                    <li>All Auctions</li>
+            </div> -->
+          <button class="btn show-btn">... Show More</button>
+        </div>
+      </div>
+      <aside class="aside">
+        <div class="cat-dropdown">
+          <div class="cat-dropdown--field">
+            <span class="cat-dropdown--arrow">🞃</span>
+            <p class="cat-dropdown--text">All</p>
+          </div>
+          <ul class="cat-dropdown--lists">
+            <li>all</li>
+            <li>Car</li>
+            <li>Real Estate</li>
+            <li>Devices</li>
+            <li>Animals, livestock and birds</li>
+            <li>Furniture</li>
+            <li>Personal Accessories</li>
+            <li>Services</li>
+            <li>Jobs</li>
+            <li>Food and beverages</li>
+            <li>Programming and designs</li>
+            <li>Library and Arts</li>
+            <li>Hunting and Trips</li>
+            <li>All Auctions</li>
+          </ul>
+          <button class="btn cat-filter--btn">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fal"
+              data-icon="search"
+              class="svg-inline--fa fa-search fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="accordion-menu">
+          <div class="filter-accordion">
+            <button class="btn accordion-btn">Filters</button>
+            <div class="panel">
+              <button class="btn new-only--btn">New only</button>
+            </div>
+          </div>
+          <div class="filter-accordion">
+            <button class="btn accordion-btn active">Quick Navigate</button>
+            <div class="panel" style="max-height: 100%">
+              <div class="navigate-menu">
+                <ul class="navigate-items">
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/ford-logo.svg"
+                        alt="Ford"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/nissan-logo.svg"
+                        alt="Nissan"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/toyota-logo.svg"
+                        alt="Toyota"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/mercedes-logo.svg"
+                        alt="Mercedes"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/chevrolet-logo.svg"
+                        alt="Chevrolet"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/lexus-icon.svg"
+                        alt="lexus"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/dodge.png"
+                        alt="Ford"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/bmw-logo.svg"
+                        alt="BMW"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img"
+                        src="img/navigate-img/ford-logo.svg"
+                        alt="Ford"
+                    /></a>
+                  </li>
                 </ul>
-                <button class="btn cat-filter--btn"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"></path></svg></button>
+                <button class="btn more-navigate--btn">
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="chevron-down"
+                      class="svg-inline--fa fa-chevron-down fa-w-14"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                      ></path>
+                    </svg>
+                  </span>
+                  Show more
+                </button>
+              </div>
+
+              <div class="navigate-menu">
+                <ul class="navigate-items">
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img navigate-img--second"
+                        src="img/navigate-img/quad-car.svg"
+                        alt="Quad car"
+                      />
+                      <span>Motorcycles</span>
+                    </a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img navigate-img--second"
+                        src="img/navigate-img/truck.svg"
+                        alt="Truck"
+                      />
+                      <span>Trucks and Heavy Equipment</span>
+                    </a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img navigate-img--second"
+                        src="img/navigate-img/parts.svg"
+                        alt="Parts"
+                      />
+                      <span>Parts and Accessories</span>
+                    </a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img navigate-img--second"
+                        src="img/navigate-img/car-loan.svg"
+                        alt="Car Loan"
+                      />
+                      <span>Car For Lease</span></a
+                    >
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img navigate-img--second"
+                        src="img/navigate-img/crash-car.svg"
+                        alt="Crash car"
+                      />
+                      <span>Crashed Cars</span>
+                    </a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-img navigate-img--second"
+                        src="img/navigate-img/heritage-car.svg"
+                        alt="heritage-car"
+                      />
+                      <span>Classic Cars</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navigate-menu">
+                <ul class="navigate-items brands-items">
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-brand--icon"
+                        src="img/navigate-img/apple-icon.svg"
+                        alt="Apple"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-brand--icon"
+                        src="img/navigate-img/samsung-icon.svg"
+                        alt="samsung"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-brand--icon"
+                        src="img/navigate-img/canon-icon.svg"
+                        alt="canon"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-brand--icon"
+                        src="img/navigate-img/sony-icon.svg"
+                        alt="Sony"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-brand--icon"
+                        src="img/navigate-img/microsoft-logo.svg"
+                        alt="Microsoft"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-brand--icon"
+                        src="img/navigate-img/nokia-icon.svg"
+                        alt="Nokia"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      ><img
+                        class="navigate-brand--icon lg-icon"
+                        src="img/navigate-img/lg-logo.svg"
+                        alt="Lg"
+                    /></a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Unique numbers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navigate-menu">
+                <ul class="navigate-items text-menu--items">
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Lands for Sale</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/"
+                      >Commercial Land for Sale</a
+                    >
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Apartments for Rent</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Apartments for Sale</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Villas for Sale</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Villas for Rent</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Building for Rent</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Shops for sale</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Shops for rent</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Farms for sale</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Chalets for sale</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Houses for sale</a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Houses for rent </a>
+                  </li>
+                  <li class="navigate-item">
+                    <a class="navigate-link" href="/">Floors for rent </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-           
-            <div class="accordion-menu">
-                <div class="filter-accordion">
-                    <button class="btn accordion-btn">Filters</button>
-                    <div class="panel">
-                        <button class="btn new-only--btn">New only</button>
-                    </div>
-                </div>
-                <div class="filter-accordion">
-                    <button class="btn accordion-btn active">Quick Navigate</button>
-                    <div class="panel" style="max-height: 100%;">
-                       <div class="navigate-menu">
-                            <ul class="navigate-items">
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/ford-logo.svg" alt="Ford"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/nissan-logo.svg" alt="Nissan"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/toyota-logo.svg" alt="Toyota"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/mercedes-logo.svg" alt="Mercedes"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/chevrolet-logo.svg" alt="Chevrolet"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/lexus-icon.svg" alt="lexus"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/dodge.png" alt="Ford"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/bmw-logo.svg" alt="BMW"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img" src="img/navigate-img/ford-logo.svg" alt="Ford"></a></li>
-                            </ul>
-                            <button class="btn more-navigate--btn"> <span>
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
-                            </span> Show more</button>
-                       </div>
-                           
-                       <div class="navigate-menu">
-                        <ul class="navigate-items">
-                            <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img navigate-img--second" src="img/navigate-img/quad-car.svg" alt="Quad car"> <span>Motorcycles</span> </a></li>
-                            <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img navigate-img--second" src="img/navigate-img/truck.svg" alt="Truck"> <span>Trucks and Heavy Equipment</span> </a></li>
-                            <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img navigate-img--second" src="img/navigate-img/parts.svg" alt="Parts"> <span>Parts and Accessories</span> </a></li>
-                            <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img navigate-img--second" src="img/navigate-img/car-loan.svg" alt="Car Loan"> <span>Car For Lease</span></a></li>
-                            <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img navigate-img--second" src="img/navigate-img/crash-car.svg" alt="Crash car"> <span>Crashed Cars</span> </a></li>
-                            <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-img navigate-img--second" src="img/navigate-img/heritage-car.svg" alt="heritage-car"> <span>Classic Cars</span></a></li>
-                        </ul>
-                       </div>
-
-                       <div class="navigate-menu">
-                            <ul class="navigate-items brands-items">
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-brand--icon" src="img/navigate-img/apple-icon.svg" alt="Apple"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-brand--icon" src="img/navigate-img/samsung-icon.svg" alt="samsung"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-brand--icon" src="img/navigate-img/canon-icon.svg" alt="canon"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-brand--icon" src="img/navigate-img/sony-icon.svg" alt="Sony"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-brand--icon" src="img/navigate-img/microsoft-logo.svg" alt="Microsoft"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-brand--icon" src="img/navigate-img/nokia-icon.svg" alt="Nokia"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/"><img class="navigate-brand--icon lg-icon" src="img/navigate-img/lg-logo.svg" alt="Lg"></a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Unique numbers</a></li>
-                            </ul>
-                        </div>
-                       <div class="navigate-menu">
-                            <ul class="navigate-items text-menu--items">
-                                <li class="navigate-item"><a class="navigate-link" href="/">Lands for Sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Commercial Land for Sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Apartments for Rent</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Apartments for Sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Villas for Sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Villas for Rent</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Building for Rent</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Shops for sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Shops for rent</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Farms for sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Chalets for sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Houses for sale</a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Houses for rent </a></li>
-                                <li class="navigate-item"><a class="navigate-link" href="/">Floors for rent </a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </aside>
+          </div>
+        </div>
+      </aside>
     </main>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <ul class="footer-top--items">
-                    <li>
-                        <a href="/"><img src="img/huawei-badge-black.webp" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="/"><img src="img/google-play-badge.webp" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="/"><img src="img/app-store-badge.webp" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-middle">
-                <nav class="footer-nav">
-                    <ul class="footer-nav--items">
-                        <li><a href="/">Featured Posts</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></span></li>
-                        <li><a href="/">Terms & Conditions</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-contract" class="svg-inline--fa fa-file-contract fa-w-12 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 64c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm192.81 248H304c8.84 0 16 7.16 16 16s-7.16 16-16 16h-47.19c-16.45 0-31.27-9.14-38.64-23.86-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34a15.986 15.986 0 0 1-14.31 8.84c-.38 0-.75-.02-1.14-.05-6.45-.45-12-4.75-14.03-10.89L144 354.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.77-16.19 54.05-9.7 66 14.16 2.02 4.06 5.96 6.5 10.16 6.5zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></span></li>
-                        <li><a href="/">Rating</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star-half-alt" class="svg-inline--fa fa-star-half-alt fa-w-17 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 512"><path fill="currentColor" d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"></path></svg></span></li>
-                        <li><a href="/">Prohibited Items</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-paper" class="svg-inline--fa fa-hand-paper fa-w-14 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M408.781 128.007C386.356 127.578 368 146.36 368 168.79V256h-8V79.79c0-22.43-18.356-41.212-40.781-40.783C297.488 39.423 280 57.169 280 79v177h-8V40.79C272 18.36 253.644-.422 231.219.007 209.488.423 192 18.169 192 40v216h-8V80.79c0-22.43-18.356-41.212-40.781-40.783C121.488 40.423 104 58.169 104 80v235.992l-31.648-43.519c-12.993-17.866-38.009-21.817-55.877-8.823-17.865 12.994-21.815 38.01-8.822 55.877l125.601 172.705A48 48 0 0 0 172.073 512h197.59c22.274 0 41.622-15.324 46.724-37.006l26.508-112.66a192.011 192.011 0 0 0 5.104-43.975V168c.001-21.831-17.487-39.577-39.218-39.993z"></path></svg></span></li>
-                        <li><a href="/">Contact</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg></span></li>
-                    </ul>
-                </nav>
-                <nav class="footer-nav">
-                    <ul class="footer-nav--items">
-                        <li><a href="/">Website Commission</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-alt" class="svg-inline--fa fa-money-bill-alt fa-w-20 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"></path></svg></span></li>
-                        <li><a href="/">Increase ad views</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-tie" class="svg-inline--fa fa-user-tie fa-w-14 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"></path></svg></span></li>
-                        <li><a href="/">Safety Center</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="siren-on" class="svg-inline--fa fa-siren-on fa-w-20 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M224.21,134.94a8,8,0,0,1,9-6.87l15.86,2.13a8,8,0,0,1,6.87,9L231.82,320H496L471,120.06A64,64,0,0,0,407.5,64h-175A64,64,0,0,0,169,120.06L144,320h55.54ZM528,352H112a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16H528a16,16,0,0,0,16-16V368A16,16,0,0,0,528,352ZM112,192a24,24,0,0,0-24-24H24a24,24,0,0,0,0,48H88A24,24,0,0,0,112,192Zm504-24H552a24,24,0,0,0,0,48h64a24,24,0,0,0,0-48ZM90.69,76a24,24,0,1,0,26.62-39.92l-48-32A24,24,0,1,0,42.69,44ZM536,80a23.87,23.87,0,0,0,13.29-4l48-32A24,24,0,1,0,570.69,4.06l-48,32A24,24,0,0,0,536,80Z"></path></svg></span></li>
-                        <li><a href="/">Suspended accounts and numbers</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ban" class="svg-inline--fa fa-ban fa-w-16 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119.034 8 8 119.033 8 256s111.034 248 248 248 248-111.034 248-248S392.967 8 256 8zm130.108 117.892c65.448 65.448 70 165.481 20.677 235.637L150.47 105.216c70.204-49.356 170.226-44.735 235.638 20.676zM125.892 386.108c-65.448-65.448-70-165.481-20.677-235.637L361.53 406.784c-70.203 49.356-170.226 44.736-235.638-20.676z"></path></svg></span></li>
-                        <li><a href="/">Privacy Policy</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="route-interstate" class="svg-inline--fa fa-route-interstate fa-w-15 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path fill="currentColor" d="M464.83 55.14c-3.6-11.66-14.92-19.1-26.18-15.95-18.23 5.12-37.74 7.96-58.1 7.96-49.12 0-93.61-16.07-126.17-42.11C250.18 1.68 245.09 0 240 0s-10.18 1.68-14.37 5.03c-32.56 26.04-77.05 42.11-126.17 42.11-20.36 0-39.87-2.84-58.1-7.96-11.23-3.15-22.57 4.26-26.18 15.95C-21.83 175.11-6.68 410.34 240 512 486.68 410.34 501.84 175.11 464.83 55.14zM240 441.87C115.27 380.93 72.01 279.56 64.76 192h350.49c-7.26 87.56-50.52 188.93-175.25 249.87z"></path></svg></span></li>
-                    </ul>
-                </nav>
-                <nav class="footer-nav">
-                    <ul class="footer-nav--items">
-                        <li><a href="/">Register</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-check" class="svg-inline--fa fa-user-check fa-w-20 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zm323-128.4l-27.8-28.1c-4.6-4.7-12.1-4.7-16.8-.1l-104.8 104-45.5-45.8c-4.6-4.7-12.1-4.7-16.8-.1l-28.1 27.9c-4.7 4.6-4.7 12.1-.1 16.8l81.7 82.3c4.6 4.7 12.1 4.7 16.8.1l141.3-140.2c4.6-4.7 4.7-12.2.1-16.8z"></path></svg></span></li>
-                        <li><a href="/">Membership of car dealerships & real estate offices</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-shield" class="svg-inline--fa fa-user-shield fa-w-20 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5.8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z"></path></svg></span></li>
-                        <li><a href="/">License</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="id-card" class="svg-inline--fa fa-id-card fa-w-18 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528 32H48C21.5 32 0 53.5 0 80v16h576V80c0-26.5-21.5-48-48-48zM0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V128H0v304zm352-232c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zM176 192c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zM67.1 396.2C75.5 370.5 99.6 352 128 352h8.2c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h8.2c28.4 0 52.5 18.5 60.9 44.2 3.2 9.9-5.2 19.8-15.6 19.8H82.7c-10.4 0-18.8-10-15.6-19.8z"></path></svg></span></li>
-                        <li><a href="/">Discount</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-alt" class="svg-inline--fa fa-money-bill-alt fa-w-20 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"></path></svg></span></li>
-                        <li><a href="/">FAQ</a> <span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question-circle" class="svg-inline--fa fa-question-circle fa-w-16 fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"></path></svg></span></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-bottom">
-                <div class="content-scale">
-                    <button class="btn btn-scale btn-scale--small">A-</button>
-                    <button class="btn btn-scale btn-scale--big">A+</button>
-                </div>
-                <div class="social-items">
-                    <ul>
-                        <li><a href="/"><img src="img/p-youtube.svg" alt="YouTube"></a></li>
-                        <li><a href="/"><img src="img/p-facebook.svg" alt="Facebook"></a></li>
-                        <li><a href="/"><img src="img/p-instagram.svg" alt="Instagram"></a></li>
-                        <li><a href="/"><img src="img/p-snapchat.svg" alt="Snapchat"></a></li>
-                        <li><a href="/"><img src="img/p-tik-tok.svg" alt="TikTok"></a></li>
-                        <li><a href="/"><img src="img/p-twitter.svg" alt="Twitter"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-content">
-                <p class="footer-text">مؤسسة موقع حراج لتقنية المعلومات</p>
-                <p class="footer-text">N9.0.38 , 3/6/2024</p>
-                <p class="footer-text">VAT: 300710482300003</p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-top">
+          <ul class="footer-top--items">
+            <li>
+              <a href="/"><img src="img/huawei-badge-black.webp" alt="" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="img/google-play-badge.webp" alt="" /></a>
+            </li>
+            <li>
+              <a href="/"><img src="img/app-store-badge.webp" alt="" /></a>
+            </li>
+          </ul>
         </div>
+        <div class="footer-middle">
+          <nav class="footer-nav">
+            <ul class="footer-nav--items">
+              <li>
+                <a href="/">Featured Posts</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="star"
+                    class="svg-inline--fa fa-star fa-w-18 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Terms & Conditions</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="file-contract"
+                    class="svg-inline--fa fa-file-contract fa-w-12 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 64c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm192.81 248H304c8.84 0 16 7.16 16 16s-7.16 16-16 16h-47.19c-16.45 0-31.27-9.14-38.64-23.86-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34a15.986 15.986 0 0 1-14.31 8.84c-.38 0-.75-.02-1.14-.05-6.45-.45-12-4.75-14.03-10.89L144 354.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.77-16.19 54.05-9.7 66 14.16 2.02 4.06 5.96 6.5 10.16 6.5zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Rating</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="star-half-alt"
+                    class="svg-inline--fa fa-star-half-alt fa-w-17 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 536 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Prohibited Items</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="hand-paper"
+                    class="svg-inline--fa fa-hand-paper fa-w-14 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M408.781 128.007C386.356 127.578 368 146.36 368 168.79V256h-8V79.79c0-22.43-18.356-41.212-40.781-40.783C297.488 39.423 280 57.169 280 79v177h-8V40.79C272 18.36 253.644-.422 231.219.007 209.488.423 192 18.169 192 40v216h-8V80.79c0-22.43-18.356-41.212-40.781-40.783C121.488 40.423 104 58.169 104 80v235.992l-31.648-43.519c-12.993-17.866-38.009-21.817-55.877-8.823-17.865 12.994-21.815 38.01-8.822 55.877l125.601 172.705A48 48 0 0 0 172.073 512h197.59c22.274 0 41.622-15.324 46.724-37.006l26.508-112.66a192.011 192.011 0 0 0 5.104-43.975V168c.001-21.831-17.487-39.577-39.218-39.993z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Contact</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="envelope"
+                    class="svg-inline--fa fa-envelope fa-w-16 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+                    ></path></svg
+                ></span>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-nav">
+            <ul class="footer-nav--items">
+              <li>
+                <a href="/">Website Commission</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="money-bill-alt"
+                    class="svg-inline--fa fa-money-bill-alt fa-w-20 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Increase ad views</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="user-tie"
+                    class="svg-inline--fa fa-user-tie fa-w-14 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Safety Center</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="siren-on"
+                    class="svg-inline--fa fa-siren-on fa-w-20 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.21,134.94a8,8,0,0,1,9-6.87l15.86,2.13a8,8,0,0,1,6.87,9L231.82,320H496L471,120.06A64,64,0,0,0,407.5,64h-175A64,64,0,0,0,169,120.06L144,320h55.54ZM528,352H112a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16H528a16,16,0,0,0,16-16V368A16,16,0,0,0,528,352ZM112,192a24,24,0,0,0-24-24H24a24,24,0,0,0,0,48H88A24,24,0,0,0,112,192Zm504-24H552a24,24,0,0,0,0,48h64a24,24,0,0,0,0-48ZM90.69,76a24,24,0,1,0,26.62-39.92l-48-32A24,24,0,1,0,42.69,44ZM536,80a23.87,23.87,0,0,0,13.29-4l48-32A24,24,0,1,0,570.69,4.06l-48,32A24,24,0,0,0,536,80Z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Suspended accounts and numbers</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="ban"
+                    class="svg-inline--fa fa-ban fa-w-16 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M256 8C119.034 8 8 119.033 8 256s111.034 248 248 248 248-111.034 248-248S392.967 8 256 8zm130.108 117.892c65.448 65.448 70 165.481 20.677 235.637L150.47 105.216c70.204-49.356 170.226-44.735 235.638 20.676zM125.892 386.108c-65.448-65.448-70-165.481-20.677-235.637L361.53 406.784c-70.203 49.356-170.226 44.736-235.638-20.676z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Privacy Policy</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="route-interstate"
+                    class="svg-inline--fa fa-route-interstate fa-w-15 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 480 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M464.83 55.14c-3.6-11.66-14.92-19.1-26.18-15.95-18.23 5.12-37.74 7.96-58.1 7.96-49.12 0-93.61-16.07-126.17-42.11C250.18 1.68 245.09 0 240 0s-10.18 1.68-14.37 5.03c-32.56 26.04-77.05 42.11-126.17 42.11-20.36 0-39.87-2.84-58.1-7.96-11.23-3.15-22.57 4.26-26.18 15.95C-21.83 175.11-6.68 410.34 240 512 486.68 410.34 501.84 175.11 464.83 55.14zM240 441.87C115.27 380.93 72.01 279.56 64.76 192h350.49c-7.26 87.56-50.52 188.93-175.25 249.87z"
+                    ></path></svg
+                ></span>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-nav">
+            <ul class="footer-nav--items">
+              <li>
+                <a href="/">Register</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="user-check"
+                    class="svg-inline--fa fa-user-check fa-w-20 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zm323-128.4l-27.8-28.1c-4.6-4.7-12.1-4.7-16.8-.1l-104.8 104-45.5-45.8c-4.6-4.7-12.1-4.7-16.8-.1l-28.1 27.9c-4.7 4.6-4.7 12.1-.1 16.8l81.7 82.3c4.6 4.7 12.1 4.7 16.8.1l141.3-140.2c4.6-4.7 4.7-12.2.1-16.8z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/"
+                  >Membership of car dealerships & real estate offices</a
+                >
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="user-shield"
+                    class="svg-inline--fa fa-user-shield fa-w-20 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5.8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">License</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="id-card"
+                    class="svg-inline--fa fa-id-card fa-w-18 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M528 32H48C21.5 32 0 53.5 0 80v16h576V80c0-26.5-21.5-48-48-48zM0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V128H0v304zm352-232c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zm0 64c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16zM176 192c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zM67.1 396.2C75.5 370.5 99.6 352 128 352h8.2c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h8.2c28.4 0 52.5 18.5 60.9 44.2 3.2 9.9-5.2 19.8-15.6 19.8H82.7c-10.4 0-18.8-10-15.6-19.8z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">Discount</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="money-bill-alt"
+                    class="svg-inline--fa fa-money-bill-alt fa-w-20 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"
+                    ></path></svg
+                ></span>
+              </li>
+              <li>
+                <a href="/">FAQ</a>
+                <span
+                  ><svg
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="question-circle"
+                    class="svg-inline--fa fa-question-circle fa-w-16 fa-fw"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+                    ></path></svg
+                ></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <div class="content-scale">
+            <button class="btn btn-scale btn-scale--small">A-</button>
+            <button class="btn btn-scale btn-scale--big">A+</button>
+          </div>
+          <div class="social-items">
+            <ul>
+              <li>
+                <a href="/"><img src="img/p-youtube.svg" alt="YouTube" /></a>
+              </li>
+              <li>
+                <a href="/"><img src="img/p-facebook.svg" alt="Facebook" /></a>
+              </li>
+              <li>
+                <a href="/"
+                  ><img src="img/p-instagram.svg" alt="Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="/"><img src="img/p-snapchat.svg" alt="Snapchat" /></a>
+              </li>
+              <li>
+                <a href="/"><img src="img/p-tik-tok.svg" alt="TikTok" /></a>
+              </li>
+              <li>
+                <a href="/"><img src="img/p-twitter.svg" alt="Twitter" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content">
+          <p class="footer-text">مؤسسة موقع حراج لتقنية المعلومات</p>
+          <p class="footer-text">N9.0.38 , 3/6/2024</p>
+          <p class="footer-text">VAT: 300710482300003</p>
+        </div>
+      </div>
     </footer>
-    
+
     <!-- JS Link -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="js/product.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
